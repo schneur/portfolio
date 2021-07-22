@@ -5,6 +5,7 @@ body, html {
 .logo img {
   width: 120px;
 }
+
 .nav-link {
   border-bottom: 1px solid rgba(0, 0, 0 ,0);
   transition: border-bottom 800ms;
@@ -17,8 +18,11 @@ body, html {
 }
 
 .photo {
+  z-index: -1;
   background-color: black;
   height: 100%;
+  width: 100%;
+  min-height: 545px;
 }
 
 .typing-container {
@@ -47,4 +51,25 @@ body, html {
 40% {opacity: 1;}
 60% {opacity: 0;}
 100% {opacity: 0;}
+}
+
+.placeholder {
+  height: 300px;
+  width: 300px;
+
+}
+
+.portfolio {
+  position: relative;
+  top: 1000px;
+  padding-top: 7px;
+  z-index: 2;
+  border: thick;
+  border-color: tomato;
+}
+.portfolio-row {
+  padding-top: 40px;
+  margin: 100px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
 }
