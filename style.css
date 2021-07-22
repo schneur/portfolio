@@ -20,3 +20,31 @@ body, html {
   background-color: black;
   height: 100%;
 }
+
+.typing-container {
+  font-size: 45px;
+  font-family: 'Rajdhani', sans-serif;
+  position: absolute;
+  top: 45%;
+  right: 83%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-cursor {
+  height: 45px;
+  display: inline-block;
+  width: 2px;
+  background-color: white;
+  margin-left: 2px;
+  animation: blink .6s linear infinite alternate;
+}
+
+@keyframes blink {
+0% {opacity: 1;}
+40% {opacity: 1;}
+60% {opacity: 0;}
+100% {opacity: 0;}
+}
