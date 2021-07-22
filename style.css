@@ -1,0 +1,22 @@
+body, html {
+  height: 100%;
+}
+
+.logo img {
+  width: 120px;
+}
+.nav-link {
+  border-bottom: 1px solid rgba(0, 0, 0 ,0);
+  transition: border-bottom 800ms;
+  font-size: 20px;
+  font-family: 'Rajdhani', sans-serif;
+}
+
+.nav-link:hover {
+  border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+.photo {
+  background-color: black;
+  height: 100%;
+}
