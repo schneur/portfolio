@@ -1,6 +1,6 @@
 const carouselText = [
   {text: "Developer"},
-  {text: "Innovative"},
+  {text: "Innovator"},
   {text: "Creative"},
   {text: "Designer"}
 ]
@@ -43,6 +43,34 @@ async function carousel(carouselList, eleRef) {
     }
 }
 
+
 function waitForMs(ms) {
   return new Promise(resolve => setTimeout(resolve, ms))
 }
+
+var nav = document.body.querySelector('.navbar');
+var hero = document.body.querySelector('.photo');
+window.addEventListener('scroll', function (event) {
+  if (window.pageYOffset > hero.scrollHeight) {
+
+    if ($(".nav-link").hasClass("text-light")) {
+      console.log("kkk");
+
+    $(".nav-link").toggleClass("text-light");
+    $(".nav-link").toggleClass("text-dark");
+    $("#logo").attr("src","./images/logo2 (2).png");
+
+    }
+  } 
+  else if (window.pageYOffset < hero.scrollHeight) {
+
+    if ($(".nav-link").hasClass("text-dark")) {
+      console.log("kkk");
+    $(".nav-link").toggleClass("text-dark");
+    $(".nav-link").toggleClass("text-light");
+    $("#logo").attr("src","./images/logo.png");
+    }
+  }// else if (window.pageYOffset < hero.scrollHeight) {
+   // $("h2").fadeIn(fast);
+  //}
+});

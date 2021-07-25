@@ -54,7 +54,6 @@
 .portfolios {
   position: relative;
   top: 700px;
-  padding-top: 7px;
   z-index: 0;
   height: fit-content;
   padding-top: 35px;
@@ -62,7 +61,139 @@
 }
 
 .portfolio {
-  width: fit-content;
-  height: auto;
+  padding: 0px;
+  width: 270px;
+  height: 270px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.portfolioOne {
+  background-image: url(./images/Screenshot\ 2021-07-25\ 111450.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 270px;
+}
+
+.portfolioTwo{
+  background-image: url(./images/api-image\ \(1\).jpg);
+  background-position: 30% 80%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 270px;
+}
+
+.portfolioThree{
+  background-image: url(./images/shoppingcartimage.jpg);
+  background-position: 24% 90%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 270px;
+}
+
+.portfolioFour{
+  background-image: url(./images/airbnbnewscloneimage.jpg);
+  background-position: center left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 270px;
+}
+
+.portfolioFive{
+  background-image: url(./images/markus-spiske-QOuHmf0_qqk-unsplash.jpg);
+  background-position: center left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 270px;
+}
+
+.portfolioSix{
+  background-image: url(./images/rockpaperscissorsimage.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 270px;
+}
+
+.portfolioSeven{
+  background-image: url(./images/newsweekcloneimage1.jpg);
+  background-position: center left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 270px;
+}
+
+.main-title{
+  color: #2d2d2d;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.title{
+  color: #1a1a1a;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.content {
+  position: relative;
+  overflow: hidden;
+}
+
+.content .content-overlay {
+  background: rgba(0,0,0,0.7);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+}
+
+.content:hover .content-overlay{
+  opacity: 1;
+}
+
+.content-details {
+  position: absolute;
+  text-align: center;
+  margin: 0px;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.content:hover .content-details{
+  top: 50%;
+  left: 50%;
+  opacity: 1;
+}
+
+.content-details h3{
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  margin-bottom: 0.5em;
+  text-transform: uppercase;
+}
+
+.content-details p{
+  color: #fff;
+  font-size: 0.8em;
+}
+
+.fadeIn-bottom{
+  top: 80%;
 }
