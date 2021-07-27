@@ -52,10 +52,7 @@ var nav = document.body.querySelector('.navbar');
 var hero = document.body.querySelector('.photo');
 window.addEventListener('scroll', function (event) {
   if (window.pageYOffset > hero.scrollHeight) {
-
     if ($(".nav-link").hasClass("text-light")) {
-      console.log("kkk");
-
     $(".nav-link").toggleClass("text-light");
     $(".nav-link").toggleClass("text-dark");
     $("#logo").attr("src","./images/logo2 (2).png");
@@ -63,9 +60,7 @@ window.addEventListener('scroll', function (event) {
     }
   } 
   else if (window.pageYOffset < hero.scrollHeight) {
-
     if ($(".nav-link").hasClass("text-dark")) {
-      console.log("kkk");
     $(".nav-link").toggleClass("text-dark");
     $(".nav-link").toggleClass("text-light");
     $("#logo").attr("src","./images/logo.png");
@@ -73,4 +68,16 @@ window.addEventListener('scroll', function (event) {
   }// else if (window.pageYOffset < hero.scrollHeight) {
    // $("h2").fadeIn(fast);
   //}
+});
+
+$('.myImg').click(function() {
+  $(".modal").css("display", 'block');
+  var src = $(this).attr("src");
+  $('.img01').attr("src", src);
+  var caption = $('.myImg').attr("alt");
+  $('.caption').html(caption);
+});
+
+$('.close').click(function() {
+  $(".modal").css("display", 'none')
 });
