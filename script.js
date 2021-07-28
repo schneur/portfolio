@@ -51,24 +51,18 @@ function waitForMs(ms) {
 var nav = document.body.querySelector('.navbar');
 var hero = document.body.querySelector('.photo');
 window.addEventListener('scroll', function (event) {
-  if (window.pageYOffset > hero.scrollHeight) {
-    if ($(".nav-link").hasClass("text-light")) {
-    $(".nav-link").toggleClass("text-light");
-    $(".nav-link").toggleClass("text-dark");
-    $("#logo").attr("src","./images/logo2 (2).png");
 
-    }
-  } 
-  else if (window.pageYOffset < hero.scrollHeight) {
-    if ($(".nav-link").hasClass("text-dark")) {
-    $(".nav-link").toggleClass("text-dark");
-    $(".nav-link").toggleClass("text-light");
-    $("#logo").attr("src","./images/logo.png");
-    }
-  }// else if (window.pageYOffset < hero.scrollHeight) {
-   // $("h2").fadeIn(fast);
-  //}
-});
+  if (window.pageYOffset > hero.scrollHeight) {
+    $('.pic').attr("src", "./images/lauren-mancke-aOC7TSLb1o8-unsplash a (6).jpg");
+    $('#logo').attr("src", "");
+    $('.navbar').css('background', 'rgba(28, 29, 28, 0.4)');
+    $(".navbar").removeClass('bg-transparent');
+  } else  {
+    $('.pic').attr("src", "./images/portfolio picture (4).jpg");
+    $('#logo').attr("src", "./images/logo.png");
+    $(".navbar").addClass('bg-transparent');
+  }
+  });
 
 $('.myImg').click(function() {
   $(".modal").css("display", 'block');
@@ -81,3 +75,4 @@ $('.myImg').click(function() {
 $('.close').click(function() {
   $(".modal").css("display", 'none')
 });
+
