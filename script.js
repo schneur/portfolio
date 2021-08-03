@@ -48,21 +48,20 @@ function waitForMs(ms) {
   return new Promise(resolve => setTimeout(resolve, ms))
 }
 
-var nav = document.body.querySelector('.navbar');
-var hero = document.body.querySelector('.photo');
-window.addEventListener('scroll', function (event) {
 
-  if (window.pageYOffset > hero.scrollHeight) {
-    $('.pic').attr("src", "./images/lauren-mancke-aOC7TSLb1o8-unsplash a (6).jpg");
-    $('#logo').attr("src", "");
-    $('.navbar').css('background', 'rgba(28, 29, 28, 0.4)');
-    $(".navbar").removeClass('bg-transparent');
-  } else  {
-    $('.pic').attr("src", "./images/portfolio picture (4).jpg");
-    $('#logo').attr("src", "./images/logo.png");
-    $(".navbar").addClass('bg-transparent');
-  }
+var hero = document.body.querySelector('.portfolios');
+
+$(function () {
+  $(document).scroll(function () {
+    var nav = $(".navbar");
+    nav.toggleClass('scrolled', $(this).scrollTop() > nav.height());
+    if (window.pageYOffset > hero.scrollHeight) {
+      $('.pic').attr("src", "./images/lauren-mancke-aOC7TSLb1o8-unsplash a (6).jpg");
+    } else {
+      $('.pic').attr("src", "./images/portfolio picture (4).jpg");
+    }
   });
+});
 
 $('.myImg').click(function() {
   $(".modal").css("display", 'block');
@@ -75,4 +74,3 @@ $('.myImg').click(function() {
 $('.close').click(function() {
   $(".modal").css("display", 'none')
 });
-

@@ -30,7 +30,7 @@
   font-family: 'Rajdhani', sans-serif;
   position: absolute;
   top: 45%;
-  right: 83%;
+  left: 35px;
   color: white;
   display: flex;
   justify-content: center;
@@ -69,8 +69,6 @@
 
 .portfolio {
   padding: 0px;
-  width: 270px;
-  height: 270px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -305,9 +303,39 @@ h2 {
   font-family: 'Bad Script', cursive;
 }
 
+.navbar.scrolled {
+  background-color: rgba(28, 29, 28, 0.4) !important;
+  transition: background-color 300ms linear;
+}
+
+
+@media (max-width: 768px) { 
+  .portfolioOne,
+  .portfolioTwo,
+  .portfolioThree,
+  .portfolioFour,
+  .portfolioFive,
+  .portfolioSix,
+  .portfolioSeven,
+  .portfolioEight {
+    height: 120px;
+  }
+  .typing-container {
+    font-size: 22px;
+    top: 25%;
+  }
+  .portfolios {
+    top: 370px ;
+  }
+  .certificates {
+    margin-top: 450px;
+  }
+ }
+
+
 /*
 Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) { ... }
+
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) { ... }
 // Large devices (desktops, 992px and up)

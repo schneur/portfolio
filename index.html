@@ -14,22 +14,21 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   </head>
 
-  <body>
+  <body id="home-page">
     <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-transparent">
-      <a class="navbar-brand logo" href="#"><img id="logo" src="./images/logo.png"></a>
       <button class="navbar-toggler bg-secondary" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse  text-light" id="navbarNav">
+      <div class="collapse navbar-collapse text-light" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
             <a class="nav-link text-light" href="#home-page">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-light" href="#personal-portfolios">portfolios</a>
+            <a class="nav-link text-light" href="#personal-portfolios">Portfolios</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-light" href="#about-me">about</a>
+            <a class="nav-link text-light" href="#contact">Contact</a>
           </li>
         </ul>
       </div>
@@ -49,10 +48,10 @@
     </div>
 
     <div class="container-fluid portfolios bg-light border-top border-success">
-      <h2 class="text-center py-3">Portfolios</h2>
+      <h2 id="personal-portfolios" class="text-center py-3">Portfolios</h2>
 
       <div class="row justify-content-around portfolio-row mb-5 pb-3">
-        <div class="col-6 col-md-3 text-center portfolio">
+        <div class="col-4 col-lg-3 text-center portfolio">
           <div class="portfolioOne content">
             <a href="https://thirsty-lovelace-e794de.netlify.app/" target="_blank">
               <div class="content-overlay"></div>
@@ -64,7 +63,7 @@
           </div>
         </div>
 
-        <div class="col-5 col-md-3 text-center portfolio">
+        <div class="col-4 col-lg-3 text-center portfolio">
           <div class="portfolioTwo content">
             <a href="https://gallant-bohr-090aca.netlify.app/" target="_blank">
               <div class="content-overlay"></div>
@@ -78,7 +77,7 @@
       </div>
 
       <div class="row justify-content-around portfolio-row my-5 py-3">
-        <div class="col-5 col-md-3 text-center portfolio">
+        <div class="col-4 col-lg-3 text-center portfolio">
           <div class="portfolioThree content">
             <a href="https://elegant-lamarr-8fa3db.netlify.app/" target="_blank">
               <div class="content-overlay"></div>
@@ -90,7 +89,7 @@
           </div>
         </div>
 
-        <div class="col-5 col-md-3 text-center portfolio">
+        <div class="col-4 col-lg-3 text-center portfolio">
           <div class="portfolioFour content">
             <a href="https://sleepy-northcutt-60d8be.netlify.app/" target="_blank">
               <div class="content-overlay"></div>
@@ -104,7 +103,7 @@
       </div>
 
       <div class="row justify-content-around portfolio-row my-5 py-3">
-        <div class="col-5 col-md-3 text-center portfolio">
+        <div class="col-4 col-lg-3 text-center portfolio">
           <div class="portfolioFive content">
             <a href="https://agitated-keller-27ad50.netlify.app/" target="_blank">
               <div class="content-overlay"></div>
@@ -115,7 +114,7 @@
             </a>
           </div>
         </div>
-        <div class="col-5 col-md-3 text-center portfolio">
+        <div class="col-4 col-lg-3 text-center portfolio">
           <div class="portfolioSix content">
             <a href="https://mystifying-poincare-a3f05b.netlify.app/" target="_blank">
               <div class="content-overlay"></div>
@@ -129,7 +128,7 @@
       </div>
       
       <div class="row justify-content-around portfolio-row my-5 py-3">
-        <div class="col-5 col-md-3 text-center portfolio">
+        <div class="col-4 col-lg-3 text-center portfolio">
           <div class="portfolioSeven content">
             <a href="https://frosty-murdock-0eb36f.netlify.app/" target="_blank">
               <div class="content-overlay"></div>
@@ -140,7 +139,7 @@
             </a>
           </div>
         </div>
-        <div class="col-5 col-md-3 text-center portfolio">
+        <div class="col-4 col-lg-3 text-center portfolio">
           <div class="portfolioEight content">
             <a href="https://laughing-hoover-e81769.netlify.app/" target="_blank">
               <div class="content-overlay"></div>
@@ -186,9 +185,9 @@
 
       </div>
     </div>
-    <div class="container-fluid contact text-center py-4 border-top border-success">
-      <div class="row justify-content-center ">
-        <divs class="col-3 text-center rounded contactInfo">
+    <div id="contact" class="container-fluid contact text-center py-4 border-top border-success">
+      <div class="row justify-content-center">
+        <divs class="col-6 text-center rounded contactInfo">
           <p>Find me on github</p>
           <a target="_blank" href="https://github.com/schneur?tab=repositories"><i class="fab fa-github py-1"></i></a>
           <p class="py-4">email: schneuryiftach@gmail.com</p>
