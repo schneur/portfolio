@@ -72,68 +72,57 @@
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+.portfolioOne,
+.portfolioTwo,
+.portfolioThree,
+.portfolioFour,
+.portfolioFive,
+.portfolioSix,
+.portfolioSeven,
+.portfolioEight {
+  height: 270px;
+  background-size: cover;
+    background-repeat: no-repeat;
+}
+
 .portfolioOne {
   background-image: url(./images/Screenshot\ 2021-07-25\ 111450.jpg);
   background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 270px;
 }
 
 .portfolioTwo{
   background-image: url(./images/api-image\ \(1\).jpg);
   background-position: 30% 80%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 270px;
 }
 
 .portfolioThree{
   background-image: url(./images/shoppingcartimage.jpg);
   background-position: 24% 90%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 270px;
 }
 
 .portfolioFour{
   background-image: url(./images/airbnbnewscloneimage.jpg);
   background-position: center left;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 270px;
 }
 
 .portfolioFive{
   background-image: url(./images/markus-spiske-QOuHmf0_qqk-unsplash.jpg);
-  background-position: center left;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 270px;
+  background-position: center left
 }
 
 .portfolioSix{
   background-image: url(./images/rockpaperscissorsimage.jpg);
   background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 270px;
 }
 
 .portfolioSeven{
   background-image: url(./images/newsweekcloneimage1.jpg);
   background-position: center left;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 270px;
 }
 
 .portfolioEight{
   background-image: url('./images/Screenshot 2021-07-30 122405.jpg');
   background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 270px;
 }
 
 .main-title{
@@ -331,14 +320,3 @@ h2 {
     margin-top: 450px;
   }
  }
-
-
-/*
-Small devices (landscape phones, 576px and up)
-
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) { ... }
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) { ... }
-// Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) { ... }*/
