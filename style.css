@@ -102,13 +102,13 @@
 }
 
 .portfolioFive{
-  background-image: url(./images/markus-spiske-QOuHmf0_qqk-unsplash.jpg);
-  background-position: center left
+  background-image: url(./images/memorycardgame.png);
+  background-position: center;
 }
 
 .portfolioSix{
-  background-image: url(./images/rockpaperscissorsimage.jpg);
-  background-position: center;
+  background-image: url(./images/legorateswebimage.png);
+  background-position: center left;
 }
 
 .portfolioSeven{
@@ -278,6 +278,10 @@ h2 {
 .fab {
   font-size: 60px;
   color: #1a1a1a;
+}
+
+.fab:hover {
+  font-size: 69px;
 }
 
 .contact {
