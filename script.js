@@ -1,8 +1,25 @@
+function checkScroll(){
+  var startY = $('.hero').height() - $('.navbar').height();
+
+  if($(window).scrollTop() > startY){
+      $('.navbar').addClass("scrolled");
+
+  }else{
+      $('.navbar').removeClass("scrolled");
+
+  }
+}
+
+if($('.navbar').length > 0){
+  $(window).on("scroll load resize", function(){
+      checkScroll();
+  });
+}
+
 const carouselText = [
   {text: "Developer"},
-  {text: "Innovator"},
-  {text: "Creative"},
-  {text: "Designer"}
+  {text: "designer"},
+  {text: "artistic"}
 ]
 
 $( document ).ready(async function() {
@@ -49,9 +66,10 @@ function waitForMs(ms) {
 }
 
 
+
 var hero = document.body.querySelector('.portfolios');
 
-$(function () {
+/*$(function () {
   $(document).scroll(function () {
     var nav = $(".navbar");
     nav.toggleClass('scrolled', $(this).scrollTop() > nav.height());
@@ -61,7 +79,9 @@ $(function () {
       $('.pic').attr("src", "./images/portfolio picture (4).jpg");
     }
   });
-});
+}); */
+
+
 
 $('.myImg').click(function() {
   $(".modal").css("display", 'block');

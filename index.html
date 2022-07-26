@@ -5,51 +5,90 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bad+Script&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Rajdhani&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Raleway:wght@900&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="/css/bootstrap.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="./style.css">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/23fb27a8ad.js" crossorigin="anonymous"></script>
   </head>
 
   <body id="home-page">
-    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-transparent">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light">
       <button class="navbar-toggler bg-secondary" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse text-light" id="navbarNav">
-        <ul class="navbar-nav">
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav m-auto nav-fill w-75">
           <li class="nav-item">
-            <a class="nav-link text-light" href="#home-page">Home</a>
+            <a class="nav-link" href="#home-page">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-light" href="#personal-portfolios">Portfolios</a>
+            <a class="nav-link" href="#personal-portfolios">Portfolios</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-light" href="#contact">Contact</a>
+            <a class="nav-link" href="#contact">Contact</a>
           </li>
         </ul>
       </div>
     </nav>
-    <div class="photo fixed-top">
-      <div class="container">
+
+    <div class="hero fixed-top">
+      <div class="container-fluid">
         <div class="row justify-content-center">
-          <div class="col-xs-12">
-            <img class="w-100 pic" src="./images/portfolio picture (4).jpg" alt="my-picture">
-            <div class="typing-container">
-              <span id="feature-text"></span>
-              <span class="input-cursor"></span>
+          <div class="col-6">
+            <h1 class="myName">
+              Hey, I'm Schneur.
+            </h1>
+          </div>
+          <div class="col-4 text-center">
+            <img class="pic rounded-circle" src="./images/profilePicture.JPG" alt="my-picture">
+          </div>
+        </div>
+        <div class="newSection fixed-top bg-light">
+          <div class="row">
+            <div class="col-12 titleSection text-left">
+              <h2 class="title">
+                Software Developer
+              </h2>
             </div>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="container-fluid portfolios bg-light border-top border-success">
-      <h2 id="personal-portfolios" class="text-center py-3">Portfolios</h2>
+    <div class="links fixed-top">
+      <div class="row mt-5">
+        <div class="col-4 contactInfo">
+          <a target="_blank" href="https://github.com/schneur?tab=repositories"><i class="fab fa-github"></i></a>
+          <a target="_blank" href="https://github.com/schneur?tab=repositories"><i class="fab fa-linkedin ml-5"></i></a>
+         </div>
+       </div>
+    </div>  
 
+
+    <div class="container-fluid aboutMe bg-white">
+      <div class="row">
+        <div class="col-12">
+          <div class="typing-container">
+            <span># </span><span id="feature-text"></span>
+            <span class="input-cursor"></span>
+          </div> 
+        </div>
+      </div>
+      <div class="row text-center">
+        <div class="col-12">
+          <p class="">A passionate full stack web developer who loves programming, designing, playing piano, and creating art. 
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+
+    <div class="container-fluid portfolios bg-light">
+      <h2 id="personal-portfolios" class="text-center">My Work</h2>
       <div class="row justify-content-around portfolio-row mb-5 pb-3">
         <div class="col-4 col-lg-3 text-center portfolio">
           <div class="portfolioOne content">
@@ -74,9 +113,7 @@
             </a>
           </div>
         </div>
-      </div>
 
-      <div class="row justify-content-around portfolio-row my-5 py-3">
         <div class="col-4 col-lg-3 text-center portfolio">
           <div class="portfolioThree content">
             <a href="https://elegant-lamarr-8fa3db.netlify.app/" target="_blank">
@@ -88,7 +125,10 @@
             </a>
           </div>
         </div>
+      </div>
 
+      <div class="row justify-content-around portfolio-row my-5 py-3">
+        
         <div class="col-4 col-lg-3 text-center portfolio">
           <div class="portfolioFour content">
             <a href="https://sleepy-northcutt-60d8be.netlify.app/" target="_blank">
@@ -100,9 +140,7 @@
             </a>
           </div>
         </div>
-      </div>
 
-      <div class="row justify-content-around portfolio-row my-5 py-3">
         <div class="col-4 col-lg-3 text-center portfolio">
           <div class="portfolioFive content">
             <a href="https://mystifying-noyce-329d37.netlify.app/" target="_blank">
@@ -114,6 +152,7 @@
             </a>
           </div>
         </div>
+
         <div class="col-4 col-lg-3 text-center portfolio">
           <div class="portfolioSix content">
             <a href="https://stark-sierra-96222.herokuapp.com/currencyConverter" target="_blank">
@@ -133,8 +172,8 @@
             <a href="https://frosty-murdock-0eb36f.netlify.app/" target="_blank">
               <div class="content-overlay"></div>
               <div class="content-details fadeIn-bottom">
-                <h3 class="content-title">Newsweek clone</h3>
-                <p class="content-text">clone of the Newsweek website (mobile responsive)</p>
+                <h3 class="content-title">twitter clone</h3>
+                <p class="content-text">create a username and start tweeting and uploading, built with ruby on rails.</p>
               </div>
             </a>
           </div>
@@ -153,13 +192,14 @@
       </div>
 
     </div>
-    <div class="container-fluid certificates text-center pb-5">
-      <h2 class="text-light pb-5 mt-2">
+
+    <div class="container-fluid certificates text-center bg-white">
+      <h2 class="pb-5 mt-2">
         Certificates
       </h2>
-      <div class="row justify-content-around">
+      <div class="row justify-content-around bg-light">
         <div class="col-4 col-md-3">
-          <img class="myImg img-fluid" src="./images/certificatehtmlcss.png" alt="certificate">
+          <img class="myImg img-fluid" src="./images/HTML_CSS_certificate.png" alt="certificate">
           <div class="myModal modal">
             <span class="close">&times;</span>
             <img class="modal-content img01">
@@ -167,7 +207,7 @@
           </div>
         </div>
         <div class="col-4 col-md-3">
-          <img class="myImg img-fluid" src="./images/certificatejavascript.png" alt="certificate">
+          <img class="myImg img-fluid" src="./images/Javascript_certificate.png" alt="certificate">
           <div class="modal">
             <span class="close">&times;</span>
             <img class="modal-content img01">
@@ -175,22 +215,38 @@
           </div>
         </div>
         <div class="col-4 col-md-3">
-          <img class="myImg img-fluid" src="./images/certificatedynamic.png" alt="certificate">
+          <img class="myImg img-fluid" src="./images/Dynamic_website_development.png" alt="certificate">
           <div class="modal">
             <span class="close">&times;</span>
             <img class="modal-content img01">
             <div class="caption"></div>
           </div>
         </div>
-
       </div>
-    </div>
-    <div id="contact" class="container-fluid contact text-center py-4 border-top border-success">
-      <div class="row justify-content-center">
-        <divs class="col-6 text-center rounded contactInfo">
-          <p>Find me on github</p>
-          <a target="_blank" href="https://github.com/schneur?tab=repositories"><i class="fab fa-github py-1"></i></a>
-          <p class="py-4">email: schneuryiftach@gmail.com</p>
+      <div class="row justify-content-around bg-light pt-5">
+        <div class="col-4 col-md-3">
+          <img class="myImg img-fluid" src="./images/React.js_certificate.png" alt="certificate">
+          <div class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content img01">
+            <div class="caption"></div>
+          </div>
+        </div>
+        <div class="col-4 col-md-3">
+          <img class="myImg img-fluid" src="./images/Ruby_certificate.png" alt="certificate">
+          <div class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content img01">
+            <div class="caption"></div>
+          </div>
+        </div>
+        <div class="col-4 col-md-3">
+          <img class="myImg img-fluid" src="./images/ruby_on_rails_certificate.png" alt="certificate">
+          <div class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content img01">
+            <div class="caption"></div>
+          </div>
         </div>
       </div>
     </div>
