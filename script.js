@@ -60,31 +60,13 @@ async function carousel(carouselList, eleRef) {
     }
 }
 
-
 function waitForMs(ms) {
   return new Promise(resolve => setTimeout(resolve, ms))
 }
 
-
-
-var hero = document.body.querySelector('.portfolios');
-
-/*$(function () {
-  $(document).scroll(function () {
-    var nav = $(".navbar");
-    nav.toggleClass('scrolled', $(this).scrollTop() > nav.height());
-    if (window.pageYOffset > hero.scrollHeight) {
-      $('.pic').attr("src", "./images/lauren-mancke-aOC7TSLb1o8-unsplash a (6).jpg");
-    } else {
-      $('.pic').attr("src", "./images/portfolio picture (4).jpg");
-    }
-  });
-}); */
-
-
-
 $('.myImg').click(function() {
   $(".modal").css("display", 'block');
+  $(".navbar").toggleClass("d-none");
   var src = $(this).attr("src");
   $('.img01').attr("src", src);
   var caption = $('.myImg').attr("alt");
@@ -93,4 +75,5 @@ $('.myImg').click(function() {
 
 $('.close').click(function() {
   $(".modal").css("display", 'none')
+  $(".navbar").toggleClass("d-none");
 });
