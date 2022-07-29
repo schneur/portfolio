@@ -293,7 +293,6 @@
 }
 
 .certificates {
-  z-index: 5;
   padding-top: 100px;
   padding-bottom: 150px;
   color: rgb(144, 26, 203);
@@ -311,7 +310,7 @@
 .myImg {
   cursor: pointer;
   transition: 0.3s;
-  border:solid 1px rgb(144, 26, 203);
+  border: solid 1px rgb(144, 26, 203);
 }
 
 .myImg:hover {
@@ -402,7 +401,7 @@ h2 {
 }
 
 
-@media (max-width: 1119px) {
+@media (max-width: 1400px) {
   .pic {
     top: 45vh;
     right: 5%;
@@ -411,7 +410,7 @@ h2 {
   
   .myName {
     top: 50vh;
-    font-size: 49px;
+    font-size: 65px;
     font-weight: 550;
   }
   
@@ -442,15 +441,135 @@ h2 {
     font-size: 51px;
   }
 
-  .certificates {
-  z-index: 5;
-  position: relative;
-  top: 690px;
-  padding-top: 100px;
-  padding-bottom: 150px;
-  color: rgb(144, 26, 203);
-  font-family: 'Caveat', cursive;
-  font-family: 'Raleway', sans-serif;
-}
 
-}
+} 
+
+@media (max-width: 768px) { 
+
+  .pic {
+    position: relative;
+    top: 50vh;
+    right: 0%;
+    height: 11%;
+    width: auto;
+  }
+  
+  .myName {
+    top: 46vh;
+    font-size: 25px;
+    font-weight: 700;
+  }
+
+  .titleSection {
+    left: 10%;
+    height: fit-content;
+  }
+  
+  .title {
+    font-size: 20px;
+    font-family: 'Caveat', cursive;
+    color: rgb(144, 26, 203);
+  }
+  
+  .links {
+    top: 63vh;
+    height: 50%;
+    z-index: 0;
+  }
+  
+  .contactInfo {
+   left: 10%;
+  }
+  
+  .fab {
+    font-size: 27px;
+    color: #1a1a1a;
+  }
+  
+  .fab:hover {
+    font-size: 28px;
+  }
+    
+  .aboutMe {
+    border-top: solid 1px rgb(144, 26, 203);;
+    position: relative;
+    top: 100vh;
+    height: 45vh;
+  
+  }
+  
+  .typing-container {
+    font-size: 45px;
+    font-family: 'Caveat', cursive;
+    font-family: 'Raleway', sans-serif;
+    padding-top: 40px;
+    color: rgb(144, 26, 203);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-color: greenyellow;
+    border: thick;
+  }
+  
+  .input-cursor {
+    height: 45px;
+    display: inline-block;
+    width: 2px;
+    background-color: black;
+    margin-left: 2px;
+    animation: blink .6s linear infinite alternate;
+  }
+  
+  .aboutMe p {  
+    margin-top: 30px;
+    margin-bottom: 40px;
+    color: rgb(144, 26, 203);  
+    font-family: 'Caveat', cursive;
+    font-family: 'Raleway', sans-serif;
+  
+  }
+
+  #personal-portfolios {
+    padding: 50px;
+    color: rgb(144, 26, 203);
+    font-size: 35px;
+    font-family: 'Caveat', cursive;
+    font-family: 'Raleway', sans-serif;
+  }
+  
+  .portfolioOne,
+  .portfolioTwo,
+  .portfolioThree,
+  .portfolioFour,
+  .portfolioFive,
+  .portfolioSix,
+  .portfolioSeven,
+  .portfolioEight {
+    height: 125px;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .portfolio {
+   padding: 15px;
+  }
+
+  .certificates h2{
+    font-size: 43px;
+    font-family: 'Caveat', cursive;
+    font-family: 'Raleway', sans-serif;
+  }
+
+  .emailSection p {
+    font-size: 12px;
+  }
+  
+  .fa-envelope {
+    font-size: 15px;
+  }
+
+  .email {
+    font-size: 15px;
+  }
+  
+ }
