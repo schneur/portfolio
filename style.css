@@ -94,7 +94,6 @@
   position: relative;
   top: 100vh;
   height: 45vh;
-
 }
 
 .typing-container {
@@ -441,10 +440,181 @@ h2 {
     font-size: 51px;
   }
 
-
+  @media (max-width: 1200px) { 
+  
+    .pic {
+      position: relative;
+      top: 40vh;
+      right: 0%;
+      height: 20%;
+      width: auto;
+    }
+    
+    .myName {
+      top: 48vh;
+      font-size: 40px;
+      font-weight: 700;
+    }
+    
+    .title {
+      font-size: 29px;
+    }
+    
+    .links {
+      top: 63vh;
+      height: 50%;
+    }
+    
+    .fab {
+      font-size: 27px;
+    }
+    
+    .fab:hover {
+      font-size: 28px;
+    }
+    
+    .typing-container {
+      font-size: 45px;
+      padding-top: 40px;
+    }
+    
+    .input-cursor {
+      height: 45px;
+    }
+  
+    .aboutMe p {  
+      margin-top: 30px;
+      margin-bottom: 20px;
+      font-size: 20px;
+    }
+  
+    #personal-portfolios {
+      padding: 50px;
+      font-size: 35px;
+    }
+    
+    .portfolioOne,
+    .portfolioTwo,
+    .portfolioThree,
+    .portfolioFour,
+    .portfolioFive,
+    .portfolioSix,
+    .portfolioSeven,
+    .portfolioEight {
+      height: 200;
+    }
+  
+    .portfolio {
+     padding: 15px;
+    }
+  
+    .certificates h2{
+      font-size: 43px;
+    }
+  
+    .emailSection p {
+      font-size: 12px;
+    }
+    
+    .fa-envelope {
+      font-size: 15px;
+    }
+  
+    .email {
+      font-size: 15px;
+    }
+    
+  
+  }
 } 
 
-@media (max-width: 768px) { 
+@media (max-width: 992px) { 
+  
+  .pic {
+    position: relative;
+    top: 49vh;
+    right: 0%;
+    height: 20%;
+    width: auto;
+  }
+  
+  .myName {
+    top: 52vh;
+    font-size: 40px;
+    font-weight: 700;
+  }
+  
+  .title {
+    font-size: 29px;
+  }
+  
+  .links {
+    top: 63vh;
+    height: 50%;
+  }
+  
+  .fab {
+    font-size: 27px;
+  }
+  
+  .fab:hover {
+    font-size: 28px;
+  }
+  
+  .typing-container {
+    font-size: 45px;
+    padding-top: 40px;
+  }
+  
+  .input-cursor {
+    height: 45px;
+  }
+
+  .aboutMe p {  
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 15px;
+  }
+
+  #personal-portfolios {
+    padding: 50px;
+    font-size: 35px;
+  }
+  
+  .portfolioOne,
+  .portfolioTwo,
+  .portfolioThree,
+  .portfolioFour,
+  .portfolioFive,
+  .portfolioSix,
+  .portfolioSeven,
+  .portfolioEight {
+    height: 200;
+  }
+
+  .portfolio {
+   padding: 15px;
+  }
+
+  .certificates h2{
+    font-size: 43px;
+  }
+
+  .emailSection p {
+    font-size: 12px;
+  }
+  
+  .fa-envelope {
+    font-size: 15px;
+  }
+
+  .email {
+    font-size: 15px;
+  }
+
+}
+
+@media (max-width: 576px) { 
 
   .pic {
     position: relative;
@@ -459,82 +629,41 @@ h2 {
     font-size: 25px;
     font-weight: 700;
   }
-
-  .titleSection {
-    left: 10%;
-    height: fit-content;
-  }
   
   .title {
     font-size: 20px;
-    font-family: 'Caveat', cursive;
-    color: rgb(144, 26, 203);
   }
   
   .links {
     top: 63vh;
     height: 50%;
-    z-index: 0;
-  }
-  
-  .contactInfo {
-   left: 10%;
   }
   
   .fab {
     font-size: 27px;
-    color: #1a1a1a;
   }
   
   .fab:hover {
     font-size: 28px;
   }
-    
-  .aboutMe {
-    border-top: solid 1px rgb(144, 26, 203);;
-    position: relative;
-    top: 100vh;
-    height: 45vh;
-  
-  }
   
   .typing-container {
     font-size: 45px;
-    font-family: 'Caveat', cursive;
-    font-family: 'Raleway', sans-serif;
     padding-top: 40px;
-    color: rgb(144, 26, 203);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-color: greenyellow;
-    border: thick;
   }
   
   .input-cursor {
     height: 45px;
-    display: inline-block;
-    width: 2px;
-    background-color: black;
-    margin-left: 2px;
-    animation: blink .6s linear infinite alternate;
   }
   
   .aboutMe p {  
     margin-top: 30px;
     margin-bottom: 40px;
-    color: rgb(144, 26, 203);  
-    font-family: 'Caveat', cursive;
-    font-family: 'Raleway', sans-serif;
-  
   }
 
   #personal-portfolios {
     padding: 50px;
-    color: rgb(144, 26, 203);
     font-size: 35px;
-    font-family: 'Caveat', cursive;
-    font-family: 'Raleway', sans-serif;
   }
   
   .portfolioOne,
@@ -546,8 +675,6 @@ h2 {
   .portfolioSeven,
   .portfolioEight {
     height: 125px;
-    background-size: cover;
-    background-repeat: no-repeat;
   }
 
   .portfolio {
@@ -556,8 +683,6 @@ h2 {
 
   .certificates h2{
     font-size: 43px;
-    font-family: 'Caveat', cursive;
-    font-family: 'Raleway', sans-serif;
   }
 
   .emailSection p {
