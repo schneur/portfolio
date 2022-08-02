@@ -31,7 +31,7 @@
 }
 
 .hero {
-  z-index: -3;
+  z-index: 0;
   height: 100%;
   width: 100%;
 }
@@ -42,6 +42,7 @@
   right: 5%;
   height: 25%;
   width: auto;
+  z-index: 2;
 }
 
 .myName {
@@ -54,7 +55,7 @@
 }
 
 .newSection {
-  z-index: -1;
+  z-index: 1;
   top: 57vh;
   height: 43vh;
 }
@@ -73,7 +74,6 @@
 .links {
   top: 63vh;
   height: 50%;
-  z-index: 0;
 }
 
 .contactInfo {
@@ -429,7 +429,7 @@ h2 {
   .links {
     top: 60vh;
     height: 45%;
-    z-index: 0;
+    z-index: 5;
   }
   
   .fab {
@@ -524,7 +524,6 @@ h2 {
       font-size: 15px;
     }
     
-  
   }
 } 
 
@@ -678,11 +677,16 @@ h2 {
   }
 
   .portfolio {
-   padding: 15px;
+    padding: 15px;
+    margin: 15px;
   }
 
   .certificates h2{
     font-size: 43px;
+  }
+
+  .certificate {
+    margin: 15px;
   }
 
   .emailSection p {
