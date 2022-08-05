@@ -702,3 +702,19 @@ h2 {
   }
   
  }
+
+ @media (max-width: 350px) { 
+
+  .pic {
+    position: relative;
+    top: 50vh;
+    right: 0%;
+    height: 11%;
+    width: auto;
+  }
+  
+  .myName {
+    top: 43vh;
+  }
+  
+ }
